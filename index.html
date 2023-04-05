@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>survey-form</title>
+</head>
+
+<body>
+<div class="container">
+
+  <header class="header">
+
+    <h1 id="title" class="title-text">SoftWare Engineers survey form</h1>
+
+    <p id="description" class="description title-text ">
+      Thank you for participating in this survey!!
+    </p>
+  </header>
+
+  <form id="survey-form">
+
+    <div class="form-section-1">
+
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required=""><br>
+
+    </div>
+
+    <div class="form-section-2">
+
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required=""><br>
+    </div>
+
+    <div class="form-section-3">
+
+      <label id="number" for="number">Age<span class="clue">(optional)</span></label><br>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"><br>
+
+    </div>
+    <div class="form-section-4">
+
+      <p>Which option best describes your current role?</p>
+
+      <select id="dropdown" name="role" class="form-control" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="other">Other</option>
+      </select>
+
+    </div>
+
+    <div class="form-section-5">
+
+      <p>Would you recommend our web development site to a friend?</p>
+
+      <label>
+        <input name="recommendation" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+      <label>
+        <input name="recommendation" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+      <label><input name="recommendation" value="not-sure" type="radio" class="input-radio">Not sure</label>
+    </div>
+
+    <div class="form-section-6">
+
+      <p>What is your favorite feature of web dev platform?</p>
+
+      <select id="dropdown" name="Likes" class="select-opt" required="">
+
+        <option disabled selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+
+    </div>
+
+    <div class="form-section-7">
+
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Confirm by Checking below )</span>
+      </p>
+
+      <div class="labels">
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end
+          Projects</label>
+
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end
+          Projects</label>
+
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Open Source
+          Projects</label>
+
+      </div>
+
+    </div>
+
+    <div class="form-section-8">
+
+      <p> remark or comments?</p>
+
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="comment here..."></textarea>
+
+    </div>
+
+    <div class="form-section-9">
+
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+
+    </div>
+
+  </form>
+
+  </div>
+
+</html>
